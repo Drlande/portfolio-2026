@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en" data-mode="public">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dax Landess · Game Design and Illustration</title>
+  <meta name="description" content="Dax Landess, Creative Technologies student at Illinois State University. Game design, level design and illustration.">
+  <meta name="author" content="Dax Landess">
+  <meta name="theme-color" content="#12161b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dax Landess · Game Design and Illustration">
+  <meta property="og:description" content="I work in game design, level design and illustration.">
+  <meta property="og:image" content="https://drlande.github.io/portfolio-2026/assets/img/capstone/style-off-1280.webp">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="wordmark" href="./">Dax Landess<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span> Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#reel">Reel</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="assets/docs/dax-landess-resume.pdf">Résumé</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow">Game design student</p>
+          <h1 class="hero__name" id="hero-title">Dax Landess</h1>
+          <p class="hero__lede">I work in game design, level design and illustration.</p>
+          <p class="hero__meta">Creative Technologies, Game Design sequence. Illinois State University, class of 2027.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#reel">Watch the reel <span class="btn__meta">1:31</span></a>
+            <a class="btn" href="#work">See the work</a>
+          </div>
+        </div>
+
+        <figure class="hero__figure compare" data-compare data-state="base">
+          <div class="compare__stage">
+            <img src="assets/img/capstone/style-off-1280.webp"
+                 srcset="assets/img/capstone/style-off-960.webp 960w, assets/img/capstone/style-off-1280.webp 1280w, assets/img/capstone/style-off-1920.webp 1920w"
+                 sizes="(min-width: 1000px) 62vw, 100vw" width="1920" height="1080" fetchpriority="high"
+                 alt="A lantern-lit gate in the capstone's underground town, with glowing red growths on the rock behind it and a hooded character at the left.">
+            <img class="compare__alt" src="assets/img/capstone/style-retro-1920.webp"
+                 srcset="assets/img/capstone/style-retro-960.webp 960w, assets/img/capstone/style-retro-1920.webp 1920w"
+                 sizes="(min-width: 1000px) 62vw, 100vw" width="1920" height="1080" decoding="async"
+                 alt="The same frame with the Retro pixel style on: blocky and dithered.">
+          </div>
+          <figcaption class="compare__bar">
+            <p class="cap"><strong>Capstone, Unreal Engine 5.8.</strong> Team project. Switch the game's Style setting.
+              <a class="compare__fallback" href="assets/img/capstone/style-retro-1920.webp">See the Retro pixel version</a>
+              <span class="visually-hidden" data-compare-status aria-live="polite"></span></p>
+            <div class="segmented" role="group" aria-label="Capstone Style setting" hidden>
+              <span class="segmented__label" aria-hidden="true">Style</span>
+              <button type="button" data-state="base" aria-pressed="true" data-announce="Showing Style: Off">Off</button>
+              <button type="button" data-state="alt" aria-pressed="false" data-announce="Showing Style: Retro pixel">Retro pixel</button>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ REEL ============ -->
+    <section id="reel" class="section section--surface" aria-labelledby="reel-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Reel · 1:31</p>
+          <h2 id="reel-title">Demo reel</h2>
+          <p>Clips from my capstone, a level, a Unity game, a tabletop game and my art.</p>
+        </div>
+        <div class="reel__grid">
+          <figure>
+            <div class="reel__player">
+              <video id="reel-video" controls preload="none" playsinline width="1280" height="720"
+                     poster="assets/img/reel/poster-1280.webp" aria-describedby="reel-desc">
+                <source src="assets/video/dax-landess-reel.mp4" type="video/mp4">
+                <p>Your browser can't play this video here. <a href="assets/video/dax-landess-reel.mp4">Download the reel (MP4)</a>.</p>
+              </video>
+            </div>
+            <figcaption class="cap" id="reel-desc">No audio. Team projects are labeled. <a href="assets/video/dax-landess-reel.mp4">Open the MP4</a> (23 MB).</figcaption>
+          </figure>
+          <div class="reel__info">
+            <h3>In the reel</h3>
+            <ol class="chapters">
+              <li><a href="assets/video/dax-landess-reel.mp4#t=0" data-seek="0"><time datetime="PT0S">0:00</time><span><strong>Intro</strong></span></a></li>
+              <li><a href="assets/video/dax-landess-reel.mp4#t=6" data-seek="6"><time datetime="PT6S">0:06</time><span><strong>Capstone</strong>Style setting and a bug fix</span></a></li>
+              <li><a href="assets/video/dax-landess-reel.mp4#t=24.5" data-seek="24.5"><time datetime="PT24S">0:24</time><span><strong>The Cores</strong>Level walkthrough</span></a></li>
+              <li><a href="assets/video/dax-landess-reel.mp4#t=46" data-seek="46"><time datetime="PT46S">0:46</time><span><strong>Keres</strong>Unity wave survival</span></a></li>
+              <li><a href="assets/video/dax-landess-reel.mp4#t=62.1" data-seek="62.1"><time datetime="PT1M2S">1:02</time><span><strong>The North</strong>Tabletop map and rules</span></a></li>
+              <li><a href="assets/video/dax-landess-reel.mp4#t=68.6" data-seek="68.6"><time datetime="PT1M8S">1:08</time><span><strong>Pixelation study</strong>Material graph</span></a></li>
+              <li><a href="assets/video/dax-landess-reel.mp4#t=73.6" data-seek="73.6"><time datetime="PT1M13S">1:13</time><span><strong>Art</strong>Concept art and paintings</span></a></li>
+              <li><a href="assets/video/dax-landess-reel.mp4#t=86" data-seek="86"><time datetime="PT1M26S">1:26</time><span><strong>Contact</strong></span></a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Work</p>
+          <h2 id="work-title">Games and levels</h2>
+        </div>
+
+        <article class="feature" aria-labelledby="capstone-title">
+          <figure>
+            <a class="zoom" href="assets/img/capstone/filter-previews-1920.webp" data-group="work">
+              <img src="assets/img/capstone/filter-previews-960.webp"
+                   srcset="assets/img/capstone/filter-previews-960.webp 960w, assets/img/capstone/filter-previews-1920.webp 1920w"
+                   sizes="(min-width: 960px) 56vw, 100vw" width="1920" height="1080" loading="lazy"
+                   alt="Five slices of one capstone frame, each with a different filter: raw, pixelated, VHS, two-tone and dithered.">
+            </a>
+            <figcaption class="cap">Filter tests for the game's Style setting.</figcaption>
+          </figure>
+          <div>
+            <p class="eyebrow">Featured · in progress</p>
+            <h3 id="capstone-title"><a href="work/capstone.html">Capstone</a></h3>
+            <p>A first-person exploration game set in an underground religious town. No combat. It's about choices and how the player sees the town.</p>
+            <dl class="facts">
+              <dt>Role</dt><dd>Producer, game designer, art director</dd>
+              <dt>Team</dt><dd>Six students</dd>
+              <dt>Engine</dt><dd>Unreal Engine 5.8</dd>
+            </dl>
+            <a class="arrow-link" href="work/capstone.html">View project</a>
+          </div>
+        </article>
+
+        <div class="work-grid">
+          <article class="work-card work-card--7">
+            <figure>
+              <img src="assets/img/cores/waterworks-800.webp"
+                   srcset="assets/img/cores/waterworks-800.webp 800w, assets/img/cores/waterworks-1600.webp 1600w"
+                   sizes="(min-width: 860px) 55vw, 100vw" width="1600" height="966" loading="lazy"
+                   alt="First-person view of a dark waterworks room with rows of green filtration beds and teal water on the right wall.">
+              <figcaption class="cap">Waterworks room.</figcaption>
+            </figure>
+            <p class="meta">Level design study · Unreal Engine · team project</p>
+            <h3><a href="work/the-cores.html">The Cores</a></h3>
+            <p>A short first-person level. Find three filter cores and bring them to the station.</p>
+          </article>
+
+          <article class="work-card work-card--5 work-card--offset">
+            <figure>
+              <img src="assets/img/keres/warden-card-1080.webp" width="1080" height="452" loading="lazy"
+                   alt="Top-down arena with a large purple boss and the text: The Warden of Erebus Approaches.">
+              <figcaption class="cap">Boss wave.</figcaption>
+            </figure>
+            <p class="meta">Scripting project · Unity 6</p>
+            <h3><a href="work/keres.html">Keres</a></h3>
+            <p>Top-down wave survival. Clear waves, spend Souls in the shop, fight the boss.</p>
+          </article>
+
+          <article class="work-card work-card--5">
+            <figure>
+              <img src="assets/img/north/map-labeled-948.webp" width="948" height="708" loading="lazy"
+                   alt="Map of icy islands with a Viking fort, a Noble town, a trading island, mountains, woods and ships.">
+              <figcaption class="cap">Game-test map.</figcaption>
+            </figure>
+            <p class="meta">Tabletop design study · d20</p>
+            <h3><a href="work/the-north.html">The North</a></h3>
+            <p>Two factions on a frozen map. First player to earn 1,000 gold and buy a boat wins.</p>
+          </article>
+
+          <article class="work-card work-card--7 work-card--offset">
+            <figure>
+              <img src="assets/img/pixelation/block-sizes-960.webp"
+                   srcset="assets/img/pixelation/block-sizes-960.webp 960w, assets/img/pixelation/block-sizes-1920.webp 1920w"
+                   sizes="(min-width: 860px) 55vw, 100vw" width="1920" height="420" loading="lazy"
+                   alt="A lantern under a wooden gate shown three ways: original, small pixel blocks, large pixel blocks.">
+              <figcaption class="cap">Original, small blocks, large blocks.</figcaption>
+            </figure>
+            <p class="meta">Technical study · Unreal Engine 5</p>
+            <h3><a href="work/pixelation.html">Pixelation study</a></h3>
+            <p>A post-process material that turns a 3D scene into pixel art. I presented it to my class.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ART ============ -->
+    <section id="art" class="section section--surface" aria-labelledby="art-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Art</p>
+          <h2 id="art-title">Concept art and illustration</h2>
+          <p>Procreate, Clip Studio Paint and pencil.</p>
+        </div>
+
+        <div class="art-grid">
+          <figure class="art--godshell">
+            <a class="zoom" href="assets/img/concept/godshell-boss-2048.webp" data-group="art">
+              <img src="assets/img/concept/godshell-boss-800.webp"
+                   srcset="assets/img/concept/godshell-boss-800.webp 800w, assets/img/concept/godshell-boss-1400.webp 1400w"
+                   sizes="(min-width: 760px) 55vw, 100vw" width="1400" height="1400" loading="lazy"
+                   alt="Armored, horned boss with red eyes and one torn wing, drawn in rough grey linework.">
+            </a>
+            <h3>Boss concept</h3>
+            <figcaption class="cap">GODSHELL.</figcaption>
+          </figure>
+
+          <figure class="art--astronaut">
+            <a class="zoom" href="assets/img/illustration/astronaut-2000.webp" data-group="art">
+              <img src="assets/img/illustration/astronaut-640.webp"
+                   srcset="assets/img/illustration/astronaut-640.webp 640w, assets/img/illustration/astronaut-1200.webp 1200w"
+                   sizes="(min-width: 760px) 40vw, 100vw" width="1200" height="1553" loading="lazy"
+                   alt="A figure in a dark suit and helmet, seen from behind, looking out a window at Earth.">
+            </a>
+            <h3>Lighting study</h3>
+            <figcaption class="cap">Backlight from a bright planet.</figcaption>
+          </figure>
+
+          <figure class="art--cards">
+            <a class="zoom" href="assets/img/concept/monster-cards-850.webp" data-group="art">
+              <img src="assets/img/concept/monster-cards-850.webp" width="850" height="720" loading="lazy"
+                   alt="Four pencil card designs of many-armed praying figures with halos, named Annie, Bel, Kendrick and Slurn, plus a card back with an antlered skull.">
+            </a>
+            <h3>Card design</h3>
+            <figcaption class="cap">Monster Cards.</figcaption>
+          </figure>
+
+          <figure class="art--meadow">
+            <a class="zoom" href="assets/img/illustration/meadow-2400.webp" data-group="art">
+              <img src="assets/img/illustration/meadow-800.webp"
+                   srcset="assets/img/illustration/meadow-800.webp 800w, assets/img/illustration/meadow-1600.webp 1600w"
+                   sizes="(min-width: 760px) 55vw, 100vw" width="1600" height="1236" loading="lazy"
+                   alt="A woman in a dark green bodysuit sitting cross-legged in tall grass with her eyes closed.">
+            </a>
+            <h3>Color study</h3>
+            <figcaption class="cap">One green palette.</figcaption>
+          </figure>
+
+          <figure class="art--portrait">
+            <a class="zoom" href="assets/img/illustration/portrait-2000.webp" data-group="art">
+              <img src="assets/img/illustration/portrait-640.webp"
+                   srcset="assets/img/illustration/portrait-640.webp 640w, assets/img/illustration/portrait-1200.webp 1200w"
+                   sizes="(min-width: 760px) 40vw, 100vw" width="1200" height="1553" loading="lazy"
+                   alt="A smiling young woman with long white hair making a peace sign.">
+            </a>
+            <h3>Character study</h3>
+            <figcaption class="cap">Pose, hands and expression.</figcaption>
+          </figure>
+        </div>
+
+        <h3 style="margin: clamp(3rem, 2rem + 3vw, 5rem) 0 1.25rem;">Sketchbook</h3>
+        <div class="sketch-strip">
+          <figure>
+            <a class="zoom" href="assets/img/sketchbook/perspective-figures-634.webp" data-group="sketch">
+              <img src="assets/img/sketchbook/perspective-figures-634.webp" width="634" height="468" loading="lazy" alt="Pencil figures in a two-point perspective grid.">
+            </a>
+            <figcaption class="cap">Perspective study</figcaption>
+          </figure>
+          <figure>
+            <a class="zoom" href="assets/img/sketchbook/perspective-room-632.webp" data-group="sketch">
+              <img src="assets/img/sketchbook/perspective-room-632.webp" width="632" height="472" loading="lazy" alt="Pencil drawing of a room in perspective with small figures at different depths.">
+            </a>
+            <figcaption class="cap">Perspective study</figcaption>
+          </figure>
+          <figure>
+            <a class="zoom" href="assets/img/sketchbook/layout-sheet-604.webp" data-group="sketch">
+              <img src="assets/img/sketchbook/layout-sheet-604.webp" width="604" height="453" loading="lazy" alt="Animation layout sheet with a marker background of trees and a girl sitting by a glass wall.">
+            </a>
+            <figcaption class="cap">Layout study</figcaption>
+          </figure>
+          <figure>
+            <a class="zoom" href="assets/img/sketchbook/armored-figure-786.webp" data-group="sketch">
+              <img src="assets/img/sketchbook/armored-figure-786.webp" width="786" height="603" loading="lazy" alt="Pencil drawing of a huge armored figure on stone steps with a tiny figure on its shoulder.">
+            </a>
+            <figcaption class="cap">Scale study</figcaption>
+          </figure>
+          <figure>
+            <a class="zoom" href="assets/img/sketchbook/red-gestures-787.webp" data-group="sketch">
+              <img src="assets/img/sketchbook/red-gestures-787.webp" width="787" height="495" loading="lazy" alt="Quick red pencil gesture drawings of people.">
+            </a>
+            <figcaption class="cap">Gesture study</figcaption>
+          </figure>
+          <figure>
+            <a class="zoom" href="assets/img/sketchbook/expressions-640.webp" data-group="sketch">
+              <img src="assets/img/sketchbook/expressions-640.webp" width="640" height="403" loading="lazy" alt="Pencil heads and faces with different expressions.">
+            </a>
+            <figcaption class="cap">Expression study</figcaption>
+          </figure>
+        </div>
+        <p style="margin-top: 2rem;"><a class="arrow-link" href="work/illustration.html">More art</a></p>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="wrap about">
+        <div class="about__text">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title" class="visually-hidden">About Dax Landess</h2>
+          <p class="lede">I'm Dax, a Creative Technologies student at Illinois State University studying game design.</p>
+          <p>I'm most interested in level design, environmental storytelling and illustration. On my capstone I'm the producer, game designer and art director, so I handle planning, gameplay ideas and the look of the game.</p>
+          <p>I've designed two board games and done freelance drawing commissions. In summer 2026 I studied Japanese at Nanzan University in Nagoya, and I'm still taking Japanese with a minor in East Asian Studies. I graduate in 2027.</p>
+        </div>
+        <div>
+          <h3 style="margin-bottom: 1rem;">Tools</h3>
+          <dl class="tools">
+            <div><dt>Unreal Engine 5</dt><dd><a href="work/capstone.html">Capstone</a>, <a href="work/the-cores.html">The Cores</a>, <a href="work/pixelation.html">Pixelation study</a></dd></div>
+            <div><dt>Unity 6</dt><dd><a href="work/keres.html">Keres</a></dd></div>
+            <div><dt>Level and tabletop design</dt><dd><a href="work/the-cores.html">The Cores</a>, <a href="work/the-north.html">The North</a></dd></div>
+            <div><dt>Procreate, Clip Studio Paint</dt><dd><a href="work/illustration.html">Art</a></dd></div>
+            <div><dt>Basics</dt><dd>Blueprints, C++, HTML/CSS</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section--surface" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 class="eyebrow" id="contact-title">Contact</h2>
+        <p><a class="contact__email" href="mailto:daxelrose11@gmail.com">daxelrose11@gmail.com</a></p>
+        <ul class="contact__links">
+          <li><a href="assets/docs/dax-landess-resume.pdf">Résumé (PDF)</a></li>
+          <li><a href="https://itch.io/profile/sakumz" rel="me">itch.io/profile/sakumz</a></li>
+        </ul>
+        <p class="muted" style="margin-top: 1.5rem;">Bloomington–Normal, Illinois</p>
+      </div>
+    </section>
+
+    <!-- ============ CREDITS & RIGHTS ============ -->
+    <section id="rights" class="section" aria-labelledby="rights-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Credits and rights</p>
+          <h2 id="rights-title" class="visually-hidden">Credits and rights</h2>
+        </div>
+        <div class="rights">
+          <div>
+            <h3>My work</h3>
+            <p>Art, Keres, The North and the pixelation study are © 2026 Dax Landess. Feel free to look. Please ask before reusing anything.</p>
+          </div>
+          <div>
+            <h3>Team projects</h3>
+            <p>The capstone and The Cores were made with classmates and belong to the team. They're shown here for my portfolio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>© 2026 Dax Landess. Site built with help from an AI assistant.</p>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#reel">Reel</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#rights">Credits</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

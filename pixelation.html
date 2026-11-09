@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" data-mode="public">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixelation study · Dax Landess</title>
+  <meta name="description" content="Pixelation study: a post-process material in Unreal Engine 5 that turns a 3D scene into pixel art.">
+  <meta name="theme-color" content="#12161b">
+  <meta property="og:title" content="Pixelation study · Dax Landess">
+  <meta property="og:image" content="https://drlande.github.io/portfolio-2026/assets/img/pixelation/block-sizes-1920.webp">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="wordmark" href="../">Dax Landess<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bars" aria-hidden="true"></span> Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="../#work" aria-current="true">Work</a></li>
+          <li><a href="../#reel">Reel</a></li>
+          <li><a href="../#about">About</a></li>
+          <li><a href="../#contact">Contact</a></li>
+          <li><a href="../assets/docs/dax-landess-resume.pdf">Résumé</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="case-head wrap">
+        <p class="eyebrow"><a href="../#work">Work</a> / Pixelation study</p>
+        <div class="case-head__grid">
+          <div>
+            <h1>Pixelation study</h1>
+            <p class="lede">Technical study. A post-process material in Unreal Engine 5 that turns a 3D scene into pixel art. I built it and taught it to my class.</p>
+          </div>
+          <dl class="facts">
+            <dt>Class</dt><dd>CTK 305, October 2026</dd>
+            <dt>Engine</dt><dd>Unreal Engine 5, material editor</dd>
+            <dt>Scene</dt><dd>From our capstone</dd>
+          </dl>
+        </div>
+      </header>
+
+      <div class="wrap">
+        <figure class="case-hero">
+          <a class="zoom" href="../assets/img/pixelation/block-sizes-1920.webp" data-group="pixel">
+            <img src="../assets/img/pixelation/block-sizes-1920.webp"
+                 srcset="../assets/img/pixelation/block-sizes-960.webp 960w, ../assets/img/pixelation/block-sizes-1920.webp 1920w"
+                 sizes="(min-width: 1360px) 1320px, 100vw" width="1920" height="420" fetchpriority="high"
+                 alt="A lantern under a wooden gate three ways: original, small pixel blocks, large pixel blocks.">
+          </a>
+          <figcaption class="cap">Original, small blocks, large blocks.</figcaption>
+        </figure>
+
+        <div class="case-body">
+          <section class="case-section" aria-labelledby="s-how">
+            <div class="case-section__head"><p class="eyebrow">01</p><h2 id="s-how">How it works</h2></div>
+            <div class="prose">
+              <ol>
+                <li>Make a material set to Post Process.</li>
+                <li>Read the frame with <code>SceneTexture: PostProcessInput0</code>.</li>
+                <li>Split the screen into a grid: screen size ÷ Pixel Count. At 1920×1080, a Pixel Count of 4 gives 480×270.</li>
+                <li>Snap each pixel to its block with Floor, so the whole block reads one color.</li>
+                <li>Put it in a Post Process Volume set to Unbound.</li>
+              </ol>
+              <figure class="figure-block">
+                <a class="zoom" href="../assets/img/pixelation/graph-1006.webp" data-group="pixel">
+                  <img src="../assets/img/pixelation/graph-1006.webp" width="1006" height="488" loading="lazy"
+                       alt="Unreal material graph: ScreenPosition, Mask, Multiply, Floor and Divide nodes feeding a SceneTexture node, with Resolution, ViewSize and Pixel Count parameters below.">
+                </a>
+                <figcaption class="cap">My material graph. Top row snaps the pixels, bottom row sets the grid size.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="case-section" aria-labelledby="s-style">
+            <div class="case-section__head"><p class="eyebrow">02</p><h2 id="s-style">Other looks</h2></div>
+            <div class="prose">
+              <p>Fewer colors and dithering push it further. In our capstone this became the <a href="capstone.html#style">Style setting</a>.</p>
+              <figure class="figure-block">
+                <a class="zoom" href="../assets/img/capstone/filter-previews-1920.webp" data-group="pixel">
+                  <img src="../assets/img/capstone/filter-previews-960.webp" srcset="../assets/img/capstone/filter-previews-960.webp 960w, ../assets/img/capstone/filter-previews-1920.webp 1920w" sizes="(min-width: 960px) 860px, 100vw" width="1920" height="1080" loading="lazy"
+                       alt="Five slices of one frame: raw, pixelated, VHS, two-tone and dithered.">
+                </a>
+                <figcaption class="cap">Raw, pixelate, VHS, two-tone, dither.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="case-section" aria-labelledby="s-limits">
+            <div class="case-section__head"><p class="eyebrow">03</p><h2 id="s-limits">Problems I ran into</h2></div>
+            <div class="prose">
+              <div class="table-scroll" tabindex="0" role="region" aria-label="Problems and fixes">
+                <table class="data-table">
+                  <thead><tr><th scope="col">Problem</th><th scope="col">Fix</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">No effect</th><td>Check the Post Process domain and that the volume is Unbound</td></tr>
+                    <tr><th scope="row">Stretched blocks</th><td>Build the grid from ViewSize</td></tr>
+                    <tr><th scope="row">Off by half a block</th><td>Add 0.5 after Floor</td></tr>
+                    <tr><th scope="row">Smearing when moving</th><td>Run it after tonemapping</td></tr>
+                    <tr><th scope="row">HUD stays sharp</th><td>Normal. UI draws after post-processing</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>It doesn't make the game run faster. It's one more pass on top of the render.</p>
+            </div>
+          </section>
+
+          <section class="case-section" aria-labelledby="s-credits">
+            <div class="case-section__head"><p class="eyebrow">04</p><h2 id="s-credits">Sources</h2></div>
+            <div class="prose">
+              <p>I didn't invent this technique. Sources from my presentation:</p>
+              <ul>
+                <li>Epic Games: Post Process Materials, Material Math Expressions</li>
+                <li>Unity: Full Screen Pass Renderer Feature</li>
+                <li>Godot: Custom post-processing</li>
+                <li>Adam Robinson-Yu: Creating <em>A Short Hike</em></li>
+                <li>Lucas Pope: <em>Return of the Obra Dinn</em> devlog</li>
+              </ul>
+              <p>Graph and captures © 2026 Dax Landess. The scene belongs to our capstone team.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <nav class="wrap case-nav" aria-label="More projects">
+      <a href="the-north.html"><small>Previous project</small><span>The North</span></a>
+      <a href="illustration.html"><small>Next</small><span>Art</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>© 2026 Dax Landess. Site built with help from an AI assistant.</p>
+      <ul>
+        <li><a href="../#work">Work</a></li>
+        <li><a href="../#reel">Reel</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#contact">Contact</a></li>
+        <li><a href="../#rights">Credits</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
