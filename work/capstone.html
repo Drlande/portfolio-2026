@@ -25,6 +25,7 @@
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <ul>
           <li><a href="../#work" aria-current="true">Work</a></li>
+          <li><a href="blender.html">Blender</a></li>
           <li><a href="../#reel">Reel</a></li>
           <li><a href="../#about">About</a></li>
           <li><a href="../#contact">Contact</a></li>
@@ -92,7 +93,7 @@
                 <li><strong>Getting caught, not dying.</strong><span>If you're caught, you're taken somewhere in the town and have to get back out.</span></li>
                 <li><strong>Choices are actions.</strong><span>Drink or refuse, keep or break a promise, go where you're not allowed.</span></li>
                 <li><strong>No good vs. evil.</strong><span>Both options should protect something the player cares about.</span></li>
-                <li><strong>3D world, 2D layer.</strong><span>Hold right mouse (the Sight) to see the town the way the community sees it.</span></li>
+                <li><strong>3D world, 2D layer.</strong><span>Hold right mouse (the Sight) to see the town the way the community sees it. <a href="#sight">Try it below</a>.</span></li>
                 <li><strong>Promises are mechanics.</strong><span>A vow changes what you're able to do.</span></li>
               </ol>
             </div>
@@ -102,9 +103,31 @@
             <div class="case-section__head"><p class="eyebrow">03</p><h2 id="s-built">What's working</h2></div>
             <div class="prose">
               <ul>
-                <li><strong>The Sight.</strong> Holding right mouse fades in a camera filter. The drawn 2D layer is still planned.</li>
+                <li><strong>The Sight.</strong> Hold right mouse and some characters turn into a flat 2D drawing.</li>
                 <li><strong>Style setting.</strong> Crisp, Retro pixel or Off, from one post-process material with dithering.</li>
               </ul>
+              <figure id="sight" class="figure-block compare" data-compare data-state="base">
+                <div class="compare__stage">
+                  <img src="../assets/img/capstone/sight-off-960.webp"
+                       srcset="../assets/img/capstone/sight-off-960.webp 960w, ../assets/img/capstone/sight-off-1920.webp 1920w"
+                       sizes="(min-width: 960px) 860px, 100vw" width="1920" height="1080" loading="lazy"
+                       alt="The gate keeper, a hooded villager, standing by the gate under a lantern.">
+                  <img class="compare__alt" src="../assets/img/capstone/sight-on-960.webp"
+                       srcset="../assets/img/capstone/sight-on-960.webp 960w, ../assets/img/capstone/sight-on-1920.webp 1920w"
+                       sizes="(min-width: 960px) 860px, 100vw" width="1920" height="1080" loading="lazy" style="image-rendering: auto;"
+                       alt="The same spot with the Sight held: the keeper is now a flat drawing of a skeletal figure holding a disc with three notches.">
+                </div>
+                <figcaption class="compare__bar">
+                  <p class="cap"><strong>The gate keeper, Sight off and held.</strong> The disc's three notches tell you which latch opens the gate.
+                    <a class="compare__fallback" href="../assets/img/capstone/sight-on-1920.webp">See the Sight version</a>
+                    <span class="visually-hidden" data-compare-status aria-live="polite"></span></p>
+                  <div class="segmented" role="group" aria-label="The Sight" hidden>
+                    <span class="segmented__label" aria-hidden="true">Sight</span>
+                    <button type="button" data-state="base" aria-pressed="true" data-announce="Showing Sight off">Off</button>
+                    <button type="button" data-state="alt" aria-pressed="false" data-announce="Showing Sight held">Held</button>
+                  </div>
+                </figcaption>
+              </figure>
               <figure class="figure-block">
                 <a class="zoom" href="../assets/img/capstone/filter-previews-1920.webp" data-group="capstone">
                   <img src="../assets/img/capstone/filter-previews-960.webp"
@@ -142,7 +165,7 @@
                 <li><strong>Game design.</strong> I wrote the development, mechanics and audio parts of our design doc.</li>
                 <li><strong>Art direction.</strong> Dark and quiet, lit by glowing roots and lanterns. I also presented our filter work to my class.</li>
               </ul>
-              <p><strong>Where it's at:</strong> the chapel area has a working baseline. The rest of the cavern, character models and animation are in progress. Next up are the 2D Sight layer, a daily schedule for NPCs, and getting caught.</p>
+              <p><strong>Where it's at:</strong> the chapel area has a working baseline. The rest of the cavern, character models and animation are in progress. Next up are more Sight drawings, a daily schedule for NPCs, and getting caught.</p>
             </div>
           </section>
 
@@ -168,6 +191,7 @@
       <p>© 2026 Dax Landess. Site built with help from an AI assistant.</p>
       <ul>
         <li><a href="../#work">Work</a></li>
+        <li><a href="blender.html">Blender</a></li>
         <li><a href="../#reel">Reel</a></li>
         <li><a href="../#about">About</a></li>
         <li><a href="../#contact">Contact</a></li>
