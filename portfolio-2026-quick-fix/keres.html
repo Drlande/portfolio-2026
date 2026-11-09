@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" data-mode="public">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keres · Dax Landess</title>
+  <meta name="description" content="Keres: a top-down wave survival game made in Unity 6 for a scripting class.">
+  <meta name="theme-color" content="#12161b">
+  <meta property="og:title" content="Keres · Dax Landess">
+  <meta property="og:image" content="https://drlande.github.io/portfolio-2026/warden-1920.webp">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap">
+  <link rel="stylesheet" href="site.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="wordmark" href="./">Dax Landess<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bars" aria-hidden="true"></span> Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="./#work" aria-current="true">Work</a></li>
+          <li><a href="./#reel">Reel</a></li>
+          <li><a href="./#about">About</a></li>
+          <li><a href="./#contact">Contact</a></li>
+          <li><a href="dax-landess-resume.pdf">Résumé</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="case-head wrap">
+        <p class="eyebrow"><a href="./#work">Work</a> / Keres</p>
+        <div class="case-head__grid">
+          <div>
+            <h1>Keres</h1>
+            <p class="lede">Scripting project. A top-down wave survival game I made in Unity for my scripting class.</p>
+          </div>
+          <dl class="facts">
+            <dt>Class</dt><dd>CTK 353, spring 2026</dd>
+            <dt>My role</dt><dd>Design and programming</dd>
+            <dt>Engine</dt><dd>Unity 6, C#</dd>
+          </dl>
+        </div>
+      </header>
+
+      <div class="wrap">
+        <figure class="case-hero">
+          <div class="video-frame">
+            <video controls preload="none" playsinline width="1280" height="302" poster="warden-1920.webp">
+              <source src="keres-gameplay.mp4" type="video/mp4">
+              <p>Your browser can't play this video here. <a href="keres-gameplay.mp4">Download the gameplay clip (MP4)</a>.</p>
+            </video>
+          </div>
+          <figcaption class="cap"><strong>Gameplay, 0:23.</strong> No audio. <a href="keres-gameplay.mp4">Open the MP4</a>.</figcaption>
+        </figure>
+
+        <div class="case-body">
+          <section class="case-section" aria-labelledby="s-loop">
+            <div class="case-section__head"><p class="eyebrow">01</p><h2 id="s-loop">How it plays</h2></div>
+            <div class="prose">
+              <ol>
+                <li>Survive the wave.</li>
+                <li>Earn Souls.</li>
+                <li>Spend them in the shop, then start the next wave when you're ready.</li>
+                <li>Fight the boss, the Warden of Erebus.</li>
+                <li>When you die, you get your stats.</li>
+              </ol>
+              <figure class="figure-block">
+                <a class="zoom" href="wave-cleared-1920.webp" data-group="keres">
+                  <img src="wave-cleared-960.webp" srcset="wave-cleared-960.webp 960w, wave-cleared-1920.webp 1920w" sizes="(min-width: 960px) 860px, 100vw" width="1920" height="452" loading="lazy"
+                       alt="Top-down arena with the text: Wave 4 Cleared! plus 18 Souls.">
+                </a>
+                <figcaption class="cap">Wave cleared.</figcaption>
+              </figure>
+              <figure class="figure-block">
+                <a class="zoom" href="dead-gather-1920.webp" data-group="keres">
+                  <img src="dead-gather-960.webp" srcset="dead-gather-960.webp 960w, dead-gather-1920.webp 1920w" sizes="(min-width: 960px) 860px, 100vw" width="1920" height="452" loading="lazy"
+                       alt="Arena with the wave title: Wave 6, The Dead Gather.">
+                </a>
+                <figcaption class="cap">Named wave.</figcaption>
+              </figure>
+              <figure class="figure-block">
+                <a class="zoom" href="game-over-1920.webp" data-group="keres">
+                  <img src="game-over-960.webp" srcset="game-over-960.webp 960w, game-over-1920.webp 1920w" sizes="(min-width: 960px) 860px, 100vw" width="1920" height="452" loading="lazy"
+                       alt="End screen: KERES FALLS, with wave reached, Shades slain, Doom strikes, score and time survived, plus Play Again and Main Menu.">
+                </a>
+                <figcaption class="cap">End-of-run stats.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="case-section" aria-labelledby="s-hud">
+            <div class="case-section__head"><p class="eyebrow">02</p><h2 id="s-hud">HUD</h2></div>
+            <div class="prose">
+              <p>Everything is placeholder shapes, so the HUD does the work: health, wave, kills, Souls, score, time and your current weapon.</p>
+              <figure class="figure-block">
+                <a class="zoom" href="warden-1920.webp" data-group="keres">
+                  <img src="warden-960.webp" srcset="warden-960.webp 960w, warden-1920.webp 1920w" sizes="(min-width: 960px) 860px, 100vw" width="1920" height="452" loading="lazy"
+                       alt="Full game view with health, wave number, kill and soul counts, the equipped weapon, and a large purple boss.">
+                </a>
+                <figcaption class="cap">Full HUD during the boss wave.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="case-section" aria-labelledby="s-process">
+            <div class="case-section__head"><p class="eyebrow">03</p><h2 id="s-process">Process</h2></div>
+            <div class="prose">
+              <p>In April it was a movement and mouse-aim test. By May it was the full arena game. Later I ported my capstone's pixel filter to it as a URP shader.</p>
+              <figure class="figure-block">
+                <a class="zoom" href="april-update-1914.webp" data-group="keres">
+                  <img src="april-update-960.webp" srcset="april-update-960.webp 960w, april-update-1914.webp 1914w" sizes="(min-width: 960px) 860px, 100vw" width="1914" height="1026" loading="lazy"
+                       alt="Unity editor with a cylinder on a plane and PlayerController code open.">
+                </a>
+                <figcaption class="cap">April movement test.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="case-section" aria-labelledby="s-credits">
+            <div class="case-section__head"><p class="eyebrow">04</p><h2 id="s-credits">Credits</h2></div>
+            <div class="prose">
+              <p>© 2026 Dax Landess. Feel free to look. Please ask before reusing it.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <nav class="wrap case-nav" aria-label="More projects">
+      <a href="the-cores.html"><small>Previous project</small><span>The Cores</span></a>
+      <a href="the-north.html"><small>Next project</small><span>The North</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>© 2026 Dax Landess. Site built with help from an AI assistant.</p>
+      <ul>
+        <li><a href="./#work">Work</a></li>
+        <li><a href="./#reel">Reel</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a href="./#contact">Contact</a></li>
+        <li><a href="./#rights">Credits</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

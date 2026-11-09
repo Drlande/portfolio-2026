@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" data-mode="public">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Cores · Dax Landess</title>
+  <meta name="description" content="The Cores: a level design study in Unreal Engine. A short first-person level built from capstone assets.">
+  <meta name="theme-color" content="#12161b">
+  <meta property="og:title" content="The Cores · Dax Landess">
+  <meta property="og:image" content="https://drlande.github.io/portfolio-2026/waterworks-1600.webp">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap">
+  <link rel="stylesheet" href="site.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="wordmark" href="./">Dax Landess<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bars" aria-hidden="true"></span> Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="./#work" aria-current="true">Work</a></li>
+          <li><a href="./#reel">Reel</a></li>
+          <li><a href="./#about">About</a></li>
+          <li><a href="./#contact">Contact</a></li>
+          <li><a href="dax-landess-resume.pdf">Résumé</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="case-head wrap">
+        <p class="eyebrow"><a href="./#work">Work</a> / The Cores</p>
+        <div class="case-head__grid">
+          <div>
+            <h1>The Cores</h1>
+            <p class="lede">Level design study. A short first-person level: find three filter cores and bring them to the station to get the water running again.</p>
+          </div>
+          <dl class="facts">
+            <dt>Type</dt><dd>Midterm, team project with classmates</dd>
+            <dt>Engine</dt><dd>Unreal Engine, using our capstone assets</dd>
+            <dt>Controls</dt><dd>WASD, mouse, Space to jump, E to interact</dd>
+          </dl>
+        </div>
+      </header>
+
+      <div class="wrap">
+        <figure class="case-hero">
+          <div class="video-frame">
+            <video controls preload="none" playsinline width="1280" height="772"
+                   poster="corridor-1600.webp">
+              <source src="the-cores-walkthrough.mp4" type="video/mp4">
+              <p>Your browser can't play this video here. <a href="the-cores-walkthrough.mp4">Download the walkthrough (MP4)</a>.</p>
+            </video>
+          </div>
+          <figcaption class="cap"><strong>Full walkthrough, 1:22.</strong> No audio. <a href="the-cores-walkthrough.mp4">Open the MP4</a>.</figcaption>
+        </figure>
+
+        <div class="case-body">
+          <section class="case-section" aria-labelledby="s-route">
+            <div class="case-section__head"><p class="eyebrow">01</p><h2 id="s-route">The route</h2></div>
+            <div class="prose">
+              <p>The level starts and ends in warm light.</p>
+              <ol class="route" aria-label="Level route, in order">
+                <li class="is-warm"><strong>1 · Corridor</strong><span>Lamps lead you in</span></li>
+                <li class="is-warm"><strong>2 · Market</strong><span>First core</span></li>
+                <li class="is-dark"><strong>3 · Stairs</strong><span>Dark transition</span></li>
+                <li class="is-cold"><strong>4 · Waterworks</strong><span>Filtration beds</span></li>
+                <li class="is-cold"><strong>5 · Station</strong><span>Install the cores</span></li>
+                <li class="is-warm"><strong>6 · Market</strong><span>Back to the start</span></li>
+              </ol>
+              <div class="figure-row figure-row--2">
+                <figure>
+                  <a class="zoom" href="corridor-1600.webp" data-group="cores">
+                    <img src="corridor-800.webp" width="800" height="483" loading="lazy" alt="A narrow amber-lit corridor with a wall lamp and clay pots.">
+                  </a>
+                  <figcaption class="cap">Corridor.</figcaption>
+                </figure>
+                <figure>
+                  <a class="zoom" href="market-1600.webp" data-group="cores">
+                    <img src="market-800.webp" width="800" height="483" loading="lazy" alt="An underground market with rope railings, crates and a lit stall.">
+                  </a>
+                  <figcaption class="cap">Market.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <section class="case-section" aria-labelledby="s-goals">
+            <div class="case-section__head"><p class="eyebrow">02</p><h2 id="s-goals">Goals</h2></div>
+            <div class="prose">
+              <p><strong>Clear objective.</strong> The goal and the core count stay on screen the whole time. One key picks up a core.</p>
+              <figure class="figure-block">
+                <a class="zoom" href="core-pickup-1600.webp" data-group="cores">
+                  <img src="core-pickup-800.webp" srcset="core-pickup-800.webp 800w, core-pickup-1600.webp 1600w" sizes="(min-width: 960px) 860px, 100vw" width="1600" height="966" loading="lazy"
+                       alt="A glowing filter core on a table. On-screen text: Collect 3 filter cores, then install them at the distribution station. Filter cores: 1/3. E: Collect filter core.">
+                </a>
+                <figcaption class="cap">Core pickup.</figcaption>
+              </figure>
+              <p><strong>Contrast.</strong> Warm market, cold waterworks. The color change tells you you're somewhere new.</p>
+              <div class="figure-row figure-row--2">
+                <figure>
+                  <a class="zoom" href="market-overlook-1600.webp" data-group="cores">
+                    <img src="market-overlook-800.webp" width="800" height="483" loading="lazy" alt="Looking down at the warm-lit market from a dark ledge.">
+                  </a>
+                  <figcaption class="cap">Warm.</figcaption>
+                </figure>
+                <figure>
+                  <a class="zoom" href="filtration-beds-1600.webp" data-group="cores">
+                    <img src="filtration-beds-800.webp" width="800" height="483" loading="lazy" alt="Rows of pale filtration beds with green water in a dark blue room.">
+                  </a>
+                  <figcaption class="cap">Cold.</figcaption>
+                </figure>
+              </div>
+              <p><strong>Payoff.</strong> The cores go into the station, then the objective sends you back up.</p>
+              <figure class="figure-block">
+                <a class="zoom" href="station-1600.webp" data-group="cores">
+                  <img src="station-800.webp" srcset="station-800.webp 800w, station-1600.webp 1600w" sizes="(min-width: 960px) 860px, 100vw" width="1600" height="966" loading="lazy"
+                       alt="A pale stone station with three filter cores on top and teal pipes at its base.">
+                </a>
+                <figcaption class="cap">Station with all three cores.</figcaption>
+              </figure>
+              <p><strong>Still rough:</strong> the objective text is Unreal's debug output and the stairs are too dark.</p>
+            </div>
+          </section>
+
+          <section class="case-section" aria-labelledby="s-credits">
+            <div class="case-section__head"><p class="eyebrow">03</p><h2 id="s-credits">Credits</h2></div>
+            <div class="prose">
+              <p>Team project with classmates, built from our capstone assets. Shown here for my portfolio. Please don't reuse it.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <nav class="wrap case-nav" aria-label="More projects">
+      <a href="capstone.html"><small>Previous project</small><span>Capstone</span></a>
+      <a href="keres.html"><small>Next project</small><span>Keres</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>© 2026 Dax Landess. Site built with help from an AI assistant.</p>
+      <ul>
+        <li><a href="./#work">Work</a></li>
+        <li><a href="./#reel">Reel</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a href="./#contact">Contact</a></li>
+        <li><a href="./#rights">Credits</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
